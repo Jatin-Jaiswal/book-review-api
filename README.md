@@ -110,19 +110,19 @@ npm run test:cov      # Test Coverage
 
 ## 📁 Screenshots
 
-📥 POST Book Success <img src="assets/ScreenShots/post-book-success.png" width="600"/>
+📥 POST Book Success <img src="assets/Screenshots/post-book-success.png" width="600"/>
 
-📤 GET All Books (Redis Cached) <img src="assets/ScreenShots/get-all-books-redis.png" width="600"/>
+📤 GET All Books (Redis Cached) <img src="assets/Screenshots/get-all-books-redis.png" width="600"/>
 
-📘 GET Single Book by ID <img src="assets/ScreenShots/get-single-book.png" width="600"/>
+📘 GET Single Book by ID <img src="assets/Screenshots/get-single-book.png" width="600"/>
 
-🗑️ DELETE Book by ID <img src="assets/ScreenShots/delete-book.png" width="600"/>
+🗑️ DELETE Book by ID <img src="assets/Screenshots/delete-book.png" width="600"/>
 
-❌ Book Not Found (404) <img src="assets/ScreenShots/book-not-found.png" width="600"/>
+❌ Book Not Found (404) <img src="assets/Screenshots/book-not-found.png" width="600"/>
 
-🐳 Redis Container Running <img src="assets/ScreenShots/redis-container-running.png" width="600"/>
+🐳 Redis Container Running <img src="assets/Screenshots/redis-container-running.png" width="600"/>
 
-🟢 NestJS Server Startup <img src="assets/ScreenShots/nestjs-server-startup.png" width="600"/>
+🟢 NestJS Server Startup <img src="assets/Screenshots/nestjs-server-startup.png" width="600"/>
 
 ---
 
