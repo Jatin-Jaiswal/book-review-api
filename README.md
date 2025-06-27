@@ -1,98 +1,178 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <a href="https://nestjs.com/" target="_blank">
+    <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="NestJS Logo" />
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<p align="center">A scalable and high-performance <a href="https://nestjs.com/" target="_blank">NestJS</a> API for managing book reviews, with PostgreSQL, Redis caching, and Prisma ORM.</p>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+<p align="center">
+  <a href="https://github.com/Jatin-Jaiswal/book-review-api"><img src="https://img.shields.io/github/stars/Jatin-Jaiswal/book-review-api?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/Jatin-Jaiswal/book-review-api"><img src="https://img.shields.io/github/last-commit/Jatin-Jaiswal/book-review-api" alt="Last commit" /></a>
+  <a href="https://www.npmjs.com/package/@nestjs/core"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="License" /></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 📘 Description
 
-## Project setup
+`book-review-api` is a full-featured RESTful backend built with **NestJS**, **PostgreSQL**, and **Redis**, ideal for real-world applications where fast, reliable API performance and caching are critical.
 
-```bash
-$ npm install
-```
+> ✅ Features fully functional CRUD, Redis-based caching, Prisma ORM, and complete testing support.
 
-## Compile and run the project
+---
 
-```bash
-# development
-$ npm run start
+## 📚 Features
 
-# watch mode
-$ npm run start:dev
+* 📖 Add, view, and delete book reviews
+* 🔁 Redis caching for performance
+* 🧾 Prisma for clean database access
+* 🧪 Unit + e2e testing with Jest
+* 🧹 ESLint + Prettier configured
+* 🗂 Modular & clean codebase
 
-# production mode
-$ npm run start:prod
-```
+---
 
-## Run tests
+## 📦 Tech Stack
 
-```bash
-# unit tests
-$ npm run test
+| Category  | Technology           |
+| --------- | -------------------- |
+| Language  | TypeScript           |
+| Framework | NestJS               |
+| Database  | PostgreSQL           |
+| ORM       | Prisma               |
+| Caching   | Redis                |
+| Testing   | Jest, Supertest      |
+| Tools     | Docker, Git, VS Code |
 
-# e2e tests
-$ npm run test:e2e
+---
 
-# test coverage
-$ npm run test:cov
-```
+## 🚀 Project Setup
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+### 📁 Clone and Install
 
 ```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
+git clone https://github.com/Jatin-Jaiswal/book-review-api.git
+cd book-review-api
+npm install
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### ⚙️ Setup Environment
 
-## Resources
+Create a `.env` file with your PostgreSQL DB connection:
 
-Check out a few resources that may come in handy when working with NestJS:
+```env
+DATABASE_URL="postgresql://postgres:jatin5555@localhost:5432/book_review"
+```
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+### 🧱 Setup Prisma
 
-## Support
+```bash
+npx prisma db push
+npx prisma generate
+```
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+---
 
-## Stay in touch
+## 📦 Run Project
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```bash
+# Dev mode
+npm run start:dev
+```
 
-## License
+> ✅ App will start on [http://localhost:3000](http://localhost:3000)
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+---
+
+## 🌐 API Endpoints
+
+| Method | Endpoint    | Description       |
+| ------ | ----------- | ----------------- |
+| GET    | /books      | Fetch all books   |
+| GET    | /books/\:id | Fetch book by ID  |
+| POST   | /books      | Create a new book |
+| DELETE | /books/\:id | Delete a book     |
+
+---
+
+## 🧪 Testing
+
+```bash
+npm run test          # Unit Tests
+npm run test:e2e      # e2e Tests
+npm run test:cov      # Test Coverage
+```
+
+📸 Test Output <img src="assets/ScreenShots/tests-passing.png" width="600"/>
+
+---
+
+## 📁 Screenshots
+
+📥 POST Book Success <img src="assets/ScreenShots/post-book-success.png" width="600"/>
+
+📤 GET All Books (Redis Cached) <img src="assets/ScreenShots/get-all-books-redis.png" width="600"/>
+
+📘 GET Single Book by ID <img src="assets/ScreenShots/get-single-book.png" width="600"/>
+
+🗑️ DELETE Book by ID <img src="assets/ScreenShots/delete-book.png" width="600"/>
+
+❌ Book Not Found (404) <img src="assets/ScreenShots/book-not-found.png" width="600"/>
+
+🐳 Redis Container Running <img src="assets/ScreenShots/redis-container-running.png" width="600"/>
+
+🟢 NestJS Server Startup <img src="assets/ScreenShots/nestjs-server-startup.png" width="600"/>
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+│
+├── books/
+│   ├── book.controller.ts
+│   ├── book.service.ts
+│   ├── dto/create-book.dto.ts
+│   └── books.module.ts
+│
+├── redis.ts
+├── app.module.ts
+└── main.ts
+```
+
+---
+
+## 🧼 Code Quality
+
+* Type-safe DTOs
+* Fully typed Redis & Prisma usage
+* Linting with ESLint
+* Formatting with Prettier
+* `.env` & `.gitignore` properly setup
+
+---
+
+## 👤 Author
+
+* **Jatin Jaiswal**
+* GitHub: [@Jatin-Jaiswal](https://github.com/Jatin-Jaiswal)
+* LinkedIn: [Jatin Jaiswal](https://linkedin.com/in/jatinjaiswal00)
+
+---
+
+## 📜 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 🧭 Next Steps (Optional)
+
+* Add Swagger API Docs (`@nestjs/swagger`)
+* Add JWT-based Authentication
+* Add pagination & search
+* Deploy via Render, Railway, or Docker + VPS
+
+
